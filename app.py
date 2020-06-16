@@ -56,8 +56,14 @@ async def messages(req: Request) -> Response:
         raise exception
 
 
+async def manifest(req: Request) -> Response:
+    return Response(body=open("""./wwwroot/manifest/echoskillbot-manifest-1.0.json""", "r+").read())
+
+
 APP = web.Application()
 APP.router.add_post("/api/messages", messages)
+APP.router.add_get("/api/manifest", manifest)
+
 
 if __name__ == "__main__":
     try:
