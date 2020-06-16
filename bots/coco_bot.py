@@ -15,7 +15,7 @@ class CoCoBot(CoCoActivityHandler):
             await self.call_active_component(turn_context)
             return
         else:
-            self.conversation_state.active_component = turn_context.activity.value
+            self.conversation_state.active_component = turn_context.activity.text
 
         await self.activate_component(
             turn_context, self.conversation_state.active_component
