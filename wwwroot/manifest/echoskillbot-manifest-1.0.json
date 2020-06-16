@@ -1,0 +1,25 @@
+{
+    "$schema": "https://schemas.botframework.com/schemas/skills/skill-manifest-2.0.0.json",
+    "$id": "CoCoSkillBot",
+    "name": "CoCo Skill Bot.",
+    "version": "1.0",
+    "description": "Universal CoCo component skill.",
+    "publisherName": "CoCoHub",
+    "privacyUrl": "https://echoskillbot.contoso.com/privacy.html",
+    "copyright": "Copyright (c) CoCoHub. All rights reserved.",
+    "license": "",
+    "iconUrl": "https://echoskillbot.contoso.com/icon.png",
+    "tags": [
+      "sample",
+      "echo"
+    ],
+    "endpoints": [
+      {
+        "name": "default",
+        "protocol": "BotFrameworkV3",
+        "description": "Default endpoint for the skill",
+        "endpointUrl": "http://echoskillbot.contoso.com/api/messages",
+        "msAppId": "00000000-0000-0000-0000-000000000000"
+      }
+    ]
+  }

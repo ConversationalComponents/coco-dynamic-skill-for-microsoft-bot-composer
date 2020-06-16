@@ -1,0 +1,3 @@
+botbuilder-integration-aiohttp>=4.7.1
+coco-microsoft-bot-framework>=0.0.1
+coco-sdk>=0.0.6
